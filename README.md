@@ -15,7 +15,7 @@ A simple, fast and flexible wiki.
 
 ## Configuration
 
-How to configure this app: From `configuration.ini` file.
+How to configure this app: via the `configuration.ini` file.
 
 ## Documentation
 
