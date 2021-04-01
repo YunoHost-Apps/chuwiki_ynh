@@ -23,7 +23,6 @@ ynh_abort_if_errors
 domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
-#language=$YNH_APP_ARG_LANGUAGE
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
@@ -66,7 +65,6 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
 ynh_app_setting_set --app=$app --key=admin --value=$admin
-#ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
 # STANDARD MODIFICATIONS
@@ -161,31 +159,6 @@ ynh_permission_update --permission="main" --add="visitors"
 
 # Remove the public access
 ynh_permission_update --permission="main" --remove="visitors"
-
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-
-### You can add specific configuration files.
-###
-### Typically, put your template conf file in ../conf/your_config_file
-### The template may contain strings such as __FOO__ or __FOO_BAR__,
-### which will automatically be replaced by the values of $foo and $foo_bar
-###
-### ynh_add_config will also keep track of the config file's checksum,
-### which later during upgrade may allow to automatically backup the config file
-### if it's found that the file was manually modified
-###
-### Check the documentation of `ynh_add_config` for more info.
-
-#ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
-
-### For more complex cases where you want to replace stuff using regexes,
-### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
-### When doing so, you also need to manually call ynh_store_file_checksum
-###
-### ynh_replace_string --match_string="match_string" --replace_string="replace_string" --target_file="$final_path/some_config_file"
-### ynh_store_file_checksum --file="$final_path/some_config_file"
 
 #=================================================
 # GENERIC FINALIZATION
