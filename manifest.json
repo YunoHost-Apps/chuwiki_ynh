@@ -41,7 +41,7 @@
                 "help": {
                     "en": "If yes, this app will can be accessible by everyone.",
                     "fr": "Si oui, cette app pourra être accessible par tout le monde."
-                }
+                },
                 "default": true
             },
             {
