@@ -1,7 +1,7 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=http://chuwiki.genezys.net/download/chuwiki-2.0.zip
+SOURCE_SUM=fcbba3757b9ed2d3cd2e9794c44e1834a25f737fda64d4eeb63bbf52683c6d4b
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
+SOURCE_FILENAME=chuwiki-2.0.zip
 SOURCE_EXTRACT=true
