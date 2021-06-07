@@ -21,6 +21,10 @@ A simple, fast and flexible wiki.
 
 **Demo:** http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable
 
+## Screenshots
+
+![](./doc/screenshots/screenshot.png)
+
 ## Disclaimers / important information
 
 ## Configuration
