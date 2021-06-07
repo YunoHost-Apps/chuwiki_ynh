@@ -6,8 +6,14 @@
         "en": "A simple, fast and flexible wiki.",
         "fr": "Un wiki simple, rapide et flexible."
     },
-    "version": "1.0~ynh1",
+    "version": "2.0~ynh1",
     "url": "http://chuwiki.genezys.net/",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "http://chuwiki.genezys.net/",
+        "admindoc": "http://chuwiki.genezys.net/",
+        "userdoc": "https://yunohost.org/apps"
+    },
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Stylix58",
