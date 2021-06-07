@@ -32,8 +32,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/wiki",
-                "default": "/wiki"
+                "example": "/chuwiki",
+                "default": "/chuwiki"
             },
             {
                 "name": "is_public",
