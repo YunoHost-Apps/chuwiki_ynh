@@ -11,8 +11,10 @@
     "upstream": {
         "license": "AGPL-3.0-only",
         "website": "http://chuwiki.genezys.net/",
+        "demo": "http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable",
         "admindoc": "http://chuwiki.genezys.net/",
-        "userdoc": "https://yunohost.org/apps"
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/genezys/chuwiki"     
     },
     "license": "AGPL-3.0-only",
     "maintainer": {
@@ -21,7 +23,7 @@
         "url": "https://stylix58.netlify.app/"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": true,
     "services": [
