@@ -6,8 +6,16 @@
         "en": "A simple, fast and flexible wiki.",
         "fr": "Un wiki simple, rapide et flexible."
     },
-    "version": "1.0~ynh1",
+    "version": "2.0~ynh1",
     "url": "http://chuwiki.genezys.net/",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "http://chuwiki.genezys.net/",
+        "demo": "http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable",
+        "admindoc": "http://chuwiki.genezys.net/",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/genezys/chuwiki"     
+    },
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Stylix58",
@@ -15,7 +23,7 @@
         "url": "https://stylix58.netlify.app/"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": true,
     "services": [
@@ -32,8 +40,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/wiki",
-                "default": "/wiki"
+                "example": "/chuwiki",
+                "default": "/chuwiki"
             },
             {
                 "name": "is_public",
