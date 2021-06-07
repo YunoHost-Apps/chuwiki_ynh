@@ -17,6 +17,10 @@ Un wiki simple, rapide et flexible.
 
 **Démo :** http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable
 
+## Captures d'écran
+
+![](./doc/screenshots/screenshot.png)
+
 ## Avertissements / informations importantes
 
 ## Configuration
