@@ -68,10 +68,18 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	ynh_secure_remove --file="$final_path"
+  	# Create a temporary directory
+  	tmpdir="$(mktemp -d)"
+  	cp -a "$final_path/configuration.ini" "$tmpdir/configuration.ini"
 
+	ynh_secure_remove --file="$final_path"
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$final_path"
+
+	# Copy the admin saved settings from tmp directory to final config path 
+  	cp -a "$tmpdir/configuration.ini" "$final_path/configuration.ini" 
+	# Remove the tmp directory securely
+  	ynh_secure_remove --file="$tmpdir"
 fi
 
 chmod 750 "$final_path"
@@ -93,16 +101,6 @@ ynh_script_progression --message="Upgrading PHP-FPM configuration..." --weight=1
 
 # Create a dedicated PHP-FPM config
 ynh_add_fpm_config
-
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
-
-ynh_add_config --template="../conf/configuration.ini" --destination="$final_path/configuration.ini"
-
-chmod 400 "$final_path/configuration.ini"
-chown $app: "$final_path/configuration.ini"
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
