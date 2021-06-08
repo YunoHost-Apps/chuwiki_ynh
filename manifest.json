@@ -44,7 +44,7 @@
                 "default": "/chuwiki"
             },
                         {
-                "name": "titre",
+                "name": "title",
                 "type": "string",
                 "ask": {
                     "en": "Choose a title for the wiki you want to create",
