@@ -95,13 +95,6 @@ chmod 400 "$final_path/configuration.ini"
 chown $app: "$final_path/configuration.ini"
 
 #=================================================
-# INTEGRATE SERVICE IN YUNOHOST
-#=================================================
-ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
-
-yunohost service add $app --description="ChuWiki service" --log="/var/log/$app/$app.log"
-
-#=================================================
 # SETUP SSOWAT
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=1
