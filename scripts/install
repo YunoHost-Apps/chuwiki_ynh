@@ -24,6 +24,7 @@ domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
 title=$YNH_APP_ARG_TITLE
+language=$YNH_APP_ARG_LANGUAGE
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -45,7 +46,8 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
-ynh_app_setting_set --app=$app --key=title --value=$title
+#ynh_app_setting_set --app=$app --key=title --value=$title
+#ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
 # CREATE DEDICATED USER
@@ -87,6 +89,16 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 ynh_add_fpm_config
 
 #=================================================
+# CONTENT PATH CONFIGURATION
+#=================================================
+
+content_path=/home/yunohost.app/$app
+mkdir -p $content_path
+ynh_app_setting_set --app=$app --key=content_path --value=$content_path
+chmod -R 750 $content_path
+chown -R $app $content_path
+
+#=================================================
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
@@ -94,7 +106,7 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 ynh_add_config --template="../conf/configuration.ini" --destination="$final_path/configuration.ini"
 
 chmod 400 "$final_path/configuration.ini"
-chown $app: "$final_path/configuration.ini"
+chown $app "$final_path/configuration.ini"
 
 #=================================================
 # SETUP SSOWAT

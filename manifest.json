@@ -60,8 +60,8 @@
                     "en": "Choose the application language",
                     "fr": "Choisissez la langue de l'application"
                 },
-                "choices": ["fr", "en"],
-                "default": "fr"
+                "choices": ["en", "es", "fr", "zh"],
+                "default": "en"
             },
             {
                 "name": "is_public",
