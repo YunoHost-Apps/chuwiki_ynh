@@ -68,18 +68,18 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
- #  	# Create a temporary directory
- #  	tmpdir="$(mktemp -d)"
- #  	cp -a "$final_path/configuration.ini" "$tmpdir/configuration.ini"
+  	# Create a temporary directory
+  	tmpdir="$(mktemp -d)"
+  	cp -a "$final_path/configuration.ini" "$tmpdir/configuration.ini"
 
-	# ynh_secure_remove --file="$final_path"
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" --keep="$final_path/configuration.ini"
+	ynh_secure_remove --file="$final_path"
+	Download, check integrity, uncompress and patch the source from app.src
+	ynh_setup_source --dest_dir="$final_path" #--keep="$final_path/configuration.ini"
 
-	# # Copy the admin saved settings from tmp directory to final config path 
- #  	cp -a "$tmpdir/configuration.ini" "$final_path/configuration.ini" 
-	# # Remove the tmp directory securely
- #  	ynh_secure_remove --file="$tmpdir"
+	# Copy the admin saved settings from tmp directory to final config path 
+  	cp -a "$tmpdir/configuration.ini" "$final_path/configuration.ini" 
+	# Remove the tmp directory securely
+  	ynh_secure_remove --file="$tmpdir"
 fi
 
 chmod 750 "$final_path"
