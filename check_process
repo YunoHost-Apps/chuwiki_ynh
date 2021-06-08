@@ -2,6 +2,8 @@
 	; Manifest
 		domain="domain.tld"
 		path="/path"
+		title="ChuWiki"
+		language="en"
 		is_public=1
 	; Checks
 		pkg_linter=1
