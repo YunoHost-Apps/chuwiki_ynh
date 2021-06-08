@@ -46,8 +46,6 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
-#ynh_app_setting_set --app=$app --key=title --value=$title
-#ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
 # CREATE DEDICATED USER
@@ -87,16 +85,6 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 
 # Create a dedicated PHP-FPM config
 ynh_add_fpm_config
-
-#=================================================
-# CONTENT PATH CONFIGURATION
-#=================================================
-
-content_path=/home/yunohost.app/$app
-mkdir -p $content_path
-ynh_app_setting_set --app=$app --key=content_path --value=$content_path
-chmod -R 750 $content_path
-chown -R $app $content_path
 
 #=================================================
 # ADD A CONFIGURATION
