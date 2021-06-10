@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Un wiki simple, rapide et flexible.
 
-**Version incluse :** 2.0~ynh1
+**Version incluse :** 2.0~ynh2
 
 **Démo :** http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable
 
