@@ -28,6 +28,7 @@ domain=$(ynh_app_setting_get --app=$app --key=domain)
 path_url=$(ynh_app_setting_get --app=$app --key=path)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+datadir=$(ynh_app_setting_get --app=$app --key=datadir)
 
 #=================================================
 # CHECK IF THE APP CAN BE RESTORED
@@ -67,12 +68,18 @@ chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
 
 #=================================================
-# RESTORE CONTENT DIR
+# RESTORE THE DATA DIRECTORY
 #=================================================
+ynh_script_progression --message="Restoring the data directory..." --weight=1
 
-ynh_restore_file --origin_path="/home/yunohost.app/$app"
-chmod -R 750 "/home/yunohost.app/$app"
-chown -R $app "/home/yunohost.app/$app"
+ynh_restore_file --origin_path="$datadir" --not_mandatory
+
+mkdir -p $datadir
+
+# this will be treated as a security issue.
+chmod 750 "$datadir"
+chmod -R o-rwx "$datadir"
+chown -R $app:www-data "$datadir"
 
 #=================================================
 # RESTORE THE PHP-FPM CONFIGURATION
