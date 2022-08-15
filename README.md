@@ -19,6 +19,7 @@ A simple, fast and flexible wiki.
 
 **Shipped version:** 2.0~ynh2
 
+
 **Demo:** http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable
 
 ## Screenshots
