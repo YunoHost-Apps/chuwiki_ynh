@@ -15,7 +15,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-A simple, fast and flexible wiki.
+Simple, fast and flexible wiki
 
 **Shipped version:** 2.0~ynh2
 
