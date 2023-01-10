@@ -15,7 +15,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Un wiki simple, rapide et flexible.
+Wiki simple, rapide et flexible
 
 **Version incluse :** 2.0~ynh2
 
