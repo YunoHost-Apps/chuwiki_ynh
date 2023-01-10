@@ -38,7 +38,6 @@ How to configure this app: via the `/var/www/chuwiki/configuration.ini` file.
 ## Documentation and resources
 
 * Official app website: <http://chuwiki.genezys.net/>
-* Official user documentation: <https://yunohost.org/apps>
 * Official admin documentation: <http://chuwiki.genezys.net/>
 * Upstream app code repository: <https://github.com/genezys/chuwiki>
 * YunoHost documentation for this app: <https://yunohost.org/app_chuwiki>
