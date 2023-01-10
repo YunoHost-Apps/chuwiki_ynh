@@ -31,6 +31,10 @@ A simple, fast and flexible wiki.
 
 How to configure this app: via the `/var/www/chuwiki/configuration.ini` file.
 
+## :red_circle: Antifeatures
+
+- **Upstream not maintained**: This software is not maintained anymore. Expect it to break down over time, be exposed to unfixed security breaches, etc.
+
 ## Documentation and resources
 
 * Official app website: <http://chuwiki.genezys.net/>
