@@ -3,8 +3,8 @@
     "id": "chuwiki",
     "packaging_format": 1,
     "description": {
-        "en": "A simple, fast and flexible wiki.",
-        "fr": "Un wiki simple, rapide et flexible."
+        "en": "Simple, fast and flexible wiki",
+        "fr": "Wiki simple, rapide et flexible"
     },
     "version": "2.0~ynh2",
     "url": "http://chuwiki.genezys.net/",
@@ -23,7 +23,7 @@
         "url": "https://stylix58.netlify.app/"
     },
     "requirements": {
-        "yunohost": ">= 4.2.4"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [

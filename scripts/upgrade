@@ -81,7 +81,7 @@ then
 
 	ynh_secure_remove --file="$final_path"
 	#Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" #--keep="$final_path/configuration.ini"
+	ynh_setup_source --dest_dir="$final_path" #--keep="configuration.ini"
 
 	# Copy the admin saved settings from tmp directory to final config path 
   	cp -a "$tmpdir/configuration.ini" "$final_path/configuration.ini" 
