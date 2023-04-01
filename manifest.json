@@ -3,8 +3,8 @@
     "id": "chuwiki",
     "packaging_format": 1,
     "description": {
-        "en": "A simple, fast and flexible wiki.",
-        "fr": "Un wiki simple, rapide et flexible."
+        "en": "Simple, fast and flexible wiki",
+        "fr": "Wiki simple, rapide et flexible"
     },
     "version": "2.0~ynh2",
     "url": "http://chuwiki.genezys.net/",
@@ -13,7 +13,6 @@
         "website": "http://chuwiki.genezys.net/",
         "demo": "http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable",
         "admindoc": "http://chuwiki.genezys.net/",
-        "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/genezys/chuwiki"     
     },
     "license": "AGPL-3.0-only",
@@ -23,12 +22,12 @@
         "url": "https://stylix58.netlify.app/"
     },
     "requirements": {
-        "yunohost": ">= 4.2.4"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
         "nginx",
-        "php7.3-fpm"
+        "php7.4-fpm"
     ],
     "arguments": {
         "install" : [
