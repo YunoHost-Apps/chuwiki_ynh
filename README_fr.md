@@ -5,15 +5,16 @@ It shall NOT be edited by hand.
 
 # ChuWiki pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/chuwiki.svg)](https://dash.yunohost.org/appci/app/chuwiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chuwiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chuwiki.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/chuwiki.svg)](https://dash.yunohost.org/appci/app/chuwiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chuwiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chuwiki.maintain.svg)
+
 [![Installer ChuWiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chuwiki)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer ChuWiki rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer ChuWiki rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Wiki simple, rapide et flexible
 
@@ -21,9 +22,9 @@ Wiki simple, rapide et flexible
 
 **Démo :** http://chuwiki.genezys.net/wiki/Bac%20%C3%A0%20sable
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de ChuWiki](./doc/screenshots/screenshot.png)
+![Capture d’écran de ChuWiki](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
 
@@ -37,9 +38,9 @@ Comment configurer cette application : via le fichier `/var/www/chuwiki/configur
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <http://chuwiki.genezys.net/>
-* Documentation officielle de l'admin : <http://chuwiki.genezys.net/>
-* Dépôt de code officiel de l'app : <https://github.com/genezys/chuwiki>
+* Site officiel de l’app : <http://chuwiki.genezys.net/>
+* Documentation officielle de l’admin : <http://chuwiki.genezys.net/>
+* Dépôt de code officiel de l’app : <https://github.com/genezys/chuwiki>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_chuwiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chuwiki_ynh/issues>
 
@@ -55,4 +56,4 @@ ou
 sudo yunohost app upgrade chuwiki -u https://github.com/YunoHost-Apps/chuwiki_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
