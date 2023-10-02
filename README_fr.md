@@ -26,12 +26,6 @@ Wiki simple, rapide et flexible
 
 ![Capture d’écran de ChuWiki](./doc/screenshots/screenshot.png)
 
-## Avertissements / informations importantes
-
-## Configuration
-
-Comment configurer cette application : via le fichier `/var/www/chuwiki/configuration.ini`.
-
 ## :red_circle: Fonctions indésirables
 
 - **Upstream not maintained**: This software is not maintained anymore. Expect it to break down over time, be exposed to unfixed security breaches, etc.
@@ -41,7 +35,6 @@ Comment configurer cette application : via le fichier `/var/www/chuwiki/configur
 * Site officiel de l’app : <http://chuwiki.genezys.net/>
 * Documentation officielle de l’admin : <http://chuwiki.genezys.net/>
 * Dépôt de code officiel de l’app : <https://github.com/genezys/chuwiki>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_chuwiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chuwiki_ynh/issues>
 
 ## Informations pour les développeurs
