@@ -1,0 +1,1 @@
+ChuWiki est tout d'abord un wiki. Un wiki est un site web dont les pages sont éditables par le visiteur. Un système d'historique permet toutefois de suivre les modifications effectuées sur une page et de restaurer une ancienne version de la page si besoin.

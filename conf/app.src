@@ -1,7 +1,0 @@
-SOURCE_URL=http://chuwiki.genezys.net/download/chuwiki-2.0.zip
-SOURCE_SUM=d944241e87469417a55f91cb513628859f33364fe5a6e6d97ce933c4efcf8329
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=zip
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=chuwiki-2.0.zip
-SOURCE_EXTRACT=true
