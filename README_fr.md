@@ -16,7 +16,8 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Wiki simple, rapide et flexible
+ChuWiki est tout d'abord un wiki. Un wiki est un site web dont les pages sont éditables par le visiteur. Un système d'historique permet toutefois de suivre les modifications effectuées sur une page et de restaurer une ancienne version de la page si besoin.
+
 
 **Version incluse :** 2.0~ynh2
 
@@ -25,12 +26,6 @@ Wiki simple, rapide et flexible
 ## Captures d’écran
 
 ![Capture d’écran de ChuWiki](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-## Configuration
-
-Comment configurer cette application : via le fichier `/var/www/chuwiki/configuration.ini`.
 
 ## :red_circle: Fonctions indésirables
 
@@ -41,7 +36,6 @@ Comment configurer cette application : via le fichier `/var/www/chuwiki/configur
 * Site officiel de l’app : <http://chuwiki.genezys.net/>
 * Documentation officielle de l’admin : <http://chuwiki.genezys.net/>
 * Dépôt de code officiel de l’app : <https://github.com/genezys/chuwiki>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_chuwiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chuwiki_ynh/issues>
 
 ## Informations pour les développeurs
