@@ -19,7 +19,7 @@ admindoc = "http://chuwiki.genezys.net/"
 code = "https://github.com/genezys/chuwiki"
 
 [integration]
-yunohost = ">= 11.0.9"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -51,8 +51,6 @@ ram.runtime = "50M"
     default = "en"
 
     [install.init_main_permission]
-    help.en = "If yes, this app will can be accessible by everyone."
-    help.fr = "Si oui, cette app pourra être accessible par tout le monde."
     type = "group"
     default = "visitors"
 
@@ -72,5 +70,5 @@ ram.runtime = "50M"
 
     [resources.apt]
     packages = [
-        "php7.4"
+        "php8.2-fpm"
     ]

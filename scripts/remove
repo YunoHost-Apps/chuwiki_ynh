@@ -16,11 +16,6 @@ ynh_script_progression --message="Removing NGINX web server configuration..." --
 
 ynh_remove_nginx_config
 
-#=================================================
-# REMOVE PHP-FPM CONFIGURATION
-#=================================================
-ynh_script_progression --message="Removing PHP-FPM configuration..." --weight=1
-
 ynh_remove_fpm_config
 
 #=================================================
