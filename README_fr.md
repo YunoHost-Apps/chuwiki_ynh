@@ -16,7 +16,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Wiki simple, rapide et flexible
+ChuWiki est tout d'abord un wiki. Un wiki est un site web dont les pages sont éditables par le visiteur. Un système d'historique permet toutefois de suivre les modifications effectuées sur une page et de restaurer une ancienne version de la page si besoin.
 
 **Version incluse :** 2.0~ynh2
 
