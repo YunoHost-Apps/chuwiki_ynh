@@ -36,6 +36,7 @@ ChuWiki est tout d'abord un wiki. Un wiki est un site web dont les pages sont é
 * Site officiel de l’app : <http://chuwiki.genezys.net/>
 * Documentation officielle de l’admin : <http://chuwiki.genezys.net/>
 * Dépôt de code officiel de l’app : <https://github.com/genezys/chuwiki>
+* YunoHost Store: <https://apps.yunohost.org/app/chuwiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/chuwiki_ynh/issues>
 
 ## Informations pour les développeurs
