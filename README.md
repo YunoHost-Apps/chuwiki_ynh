@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # ChuWiki for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/chuwiki.svg)](https://dash.yunohost.org/appci/app/chuwiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/chuwiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/chuwiki.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/chuwiki.svg)](https://dash.yunohost.org/appci/app/chuwiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/chuwiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/chuwiki.maintain.svg)
+
 [![Install ChuWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chuwiki)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -15,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Simple, fast and flexible wiki
+ChuWiki is first and foremost a wiki. A wiki is a website whose pages can be edited by the visitor. However, a history system allows you to track modifications made to a page and restore an old version of the page if necessary.
 
 **Shipped version:** 2.0~ynh2
 
@@ -24,12 +25,6 @@ Simple, fast and flexible wiki
 ## Screenshots
 
 ![Screenshot of ChuWiki](./doc/screenshots/screenshot.png)
-
-## Disclaimers / important information
-
-## Configuration
-
-How to configure this app: via the `/var/www/chuwiki/configuration.ini` file.
 
 ## :red_circle: Antifeatures
 
@@ -40,7 +35,7 @@ How to configure this app: via the `/var/www/chuwiki/configuration.ini` file.
 * Official app website: <http://chuwiki.genezys.net/>
 * Official admin documentation: <http://chuwiki.genezys.net/>
 * Upstream app code repository: <https://github.com/genezys/chuwiki>
-* YunoHost documentation for this app: <https://yunohost.org/app_chuwiki>
+* YunoHost Store: <https://apps.yunohost.org/app/chuwiki>
 * Report a bug: <https://github.com/YunoHost-Apps/chuwiki_ynh/issues>
 
 ## Developer info
