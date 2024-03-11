@@ -57,7 +57,7 @@ then
     cp -a "$install_dir/configuration.ini" "$tmpdir/configuration.ini"
 
     # Download, check integrity, uncompress and patch the source from app.src
-    ynh_setup_source --dest_dir="$install_dir" #--keep="configuration.ini"
+    ynh_setup_source --dest_dir="$install_dir" # --full_replace=1 --keep="configuration.ini"
 
     # Copy the admin saved settings from tmp directory to final config path
     cp -a "$tmpdir/configuration.ini" "$install_dir/configuration.ini"
