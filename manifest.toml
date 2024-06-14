@@ -19,7 +19,7 @@ admindoc = "http://chuwiki.genezys.net/"
 code = "https://github.com/genezys/chuwiki"
 
 [integration]
-yunohost = ">= 11.0.9"
+yunohost = ">= 11.1.9"
 architectures = "all"
 multi_instance = true
 ldap = false

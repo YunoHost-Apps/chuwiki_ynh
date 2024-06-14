@@ -26,7 +26,7 @@ ChuWiki is first and foremost a wiki. A wiki is a website whose pages can be edi
 
 ![Captura de pantalla de ChuWiki](./doc/screenshots/screenshot.png)
 
-## :red_circle: Caraterísticas cuestionables
+## :red_circle: Debes considerar
 
 - **Upstream not maintained**: This software is not maintained anymore. Expect it to break down over time, be exposed to unfixed security breaches, etc.
 
